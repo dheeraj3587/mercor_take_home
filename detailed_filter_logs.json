@@ -1,0 +1,105 @@
+{
+  "metadata": {
+    "created_at": "2025-08-03T11:13:42.426374",
+    "total_sessions": 12,
+    "log_version": "1.0"
+  },
+  "sessions": [
+    {
+      "job_config_name": "Tax Lawyer",
+      "query": "tax attorney lawyer irs audit \"big four\" \"am law 100\" corporate tax",
+      "total_candidates": 250,
+      "candidates_after_filtering": 21,
+      "filter_failures": [],
+      "timestamp": "2025-08-03T11:05:17.372627"
+    },
+    {
+      "job_config_name": "Mechanical Engineer",
+      "query": "mechanical engineer product design manufacturing simulation solidworks ansys",
+      "total_candidates": 250,
+      "candidates_after_filtering": 18,
+      "filter_failures": [],
+      "timestamp": "2025-08-03T11:05:20.212177"
+    },
+    {
+      "job_config_name": "Junior Corporate Lawyer",
+      "query": "('junior corporate associate' OR 'corporate law clerk' OR 'legal intern' OR 'entry-level attorney') AND ('M&A' OR 'due diligence' OR 'contract drafting')",
+      "total_candidates": 250,
+      "candidates_after_filtering": 80,
+      "filter_failures": [],
+      "timestamp": "2025-08-03T11:05:22.255853"
+    },
+    {
+      "job_config_name": "Medical Doctor",
+      "query": "physician MD \"US medical school\" OR \"American medical graduate\" OR \"ECFMG certified\" healthcare \"board certified\"",
+      "total_candidates": 250,
+      "candidates_after_filtering": 19,
+      "filter_failures": [],
+      "timestamp": "2025-08-03T11:05:24.453224"
+    },
+    {
+      "job_config_name": "Biology Expert",
+      "query": "PhD (biologist OR molecular biology OR cell biology OR genetics OR biochemistry) research scientist (CRISPR OR sequencing OR genomics)",
+      "total_candidates": 250,
+      "candidates_after_filtering": 247,
+      "filter_failures": [],
+      "timestamp": "2025-08-03T11:05:27.387013"
+    },
+    {
+      "job_config_name": "Mathematics PhD",
+      "query": "phd mathematics OR phd statistics OR phd applied math research statistical modeling",
+      "total_candidates": 250,
+      "candidates_after_filtering": 247,
+      "filter_failures": [],
+      "timestamp": "2025-08-03T11:05:30.887857"
+    },
+    {
+      "job_config_name": "Anthropology PhD",
+      "query": "phd anthropology OR phd sociology OR anthropologist OR sociologist research fieldwork",
+      "total_candidates": 250,
+      "candidates_after_filtering": 247,
+      "filter_failures": [],
+      "timestamp": "2025-08-03T11:05:33.853122"
+    },
+    {
+      "job_config_name": "Quantitative Finance",
+      "query": "('quantitative analyst' OR 'financial engineer' OR 'PhD physics' OR 'PhD mathematics') AND ('Goldman Sachs' OR 'Jane Street' OR 'Citadel' OR 'Two Sigma' OR 'hedge fund' OR 'investment bank') AND (python OR c++)",
+      "total_candidates": 250,
+      "candidates_after_filtering": 12,
+      "filter_failures": [],
+      "timestamp": "2025-08-03T11:05:37.143332"
+    },
+    {
+      "job_config_name": "Radiologist",
+      "query": "radiologist OR \"radiology physician\" OR \"diagnostic radiologist\" OR \"medical imaging md\"",
+      "total_candidates": 250,
+      "candidates_after_filtering": 15,
+      "filter_failures": [],
+      "timestamp": "2025-08-03T11:05:39.435183"
+    },
+    {
+      "job_config_name": "Healthcare Investment Banker",
+      "query": "(\"investment banking\" OR \"M&A advisory\") AND (healthcare OR biotech OR pharma) AND \"MBA\"",
+      "total_candidates": 250,
+      "candidates_after_filtering": 26,
+      "filter_failures": [],
+      "timestamp": "2025-08-03T11:05:41.607291"
+    },
+    {
+      "job_config_name": "Quantitative Finance",
+      "query": "('quantitative analyst' OR 'quant researcher' OR 'financial engineer' OR 'PhD physics' OR 'PhD mathematics' OR 'PhD statistics') AND ('hedge fund' OR 'prop desk' OR 'market-making' OR 'Goldman Sachs' OR 'Jane Street' OR 'Citadel' OR 'Two Sigma' OR 'Citadel Securities' OR 'Point72' OR 'Jump Trading') AND (python OR c++ OR 'machine learning')",
+      "total_candidates": 250,
+      "candidates_after_filtering": 18,
+      "filter_failures": [],
+      "timestamp": "2025-08-03T11:13:11.717890"
+    },
+    {
+      "job_config_name": "Quantitative Finance",
+      "query": "('quantitative analyst' OR 'financial engineer' OR 'PhD physics' OR 'PhD mathematics') AND ('Goldman Sachs' OR 'Jane Street' OR 'Citadel' OR 'Two Sigma' OR 'hedge fund' OR 'investment bank') AND (python OR c++)",
+      "total_candidates": 250,
+      "candidates_after_filtering": 17,
+      "filter_failures": [],
+      "timestamp": "2025-08-03T11:13:42.426129"
+    }
+  ]
+}

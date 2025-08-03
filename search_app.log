@@ -1,0 +1,310 @@
+[2025-08-03 11:13:34,705] [INFO] [search_engine:29] - TurboPuffer client and processors initialized.
+[2025-08-03 11:13:34,726] [INFO] [search_engine:35] - OpenAI client initialized successfully.
+[2025-08-03 11:13:34,726] [INFO] [search_engine:42] - Voyage AI client initialized successfully.
+[2025-08-03 11:13:37,222] [INFO] [utils:81] - Testing 1 specific queries...
+[2025-08-03 11:13:37,224] [INFO] [utils:89] - ========================================
+[2025-08-03 11:13:37,224] [INFO] [utils:90] - Testing: Quantitative Finance (quantitative_finance.yml)
+[2025-08-03 11:13:37,224] [INFO] [utils:91] - ========================================
+[2025-08-03 11:13:37,224] [INFO] [search_engine:203] - Running search for: Quantitative Finance
+[2025-08-03 11:13:37,339] [DEBUG] [openai._base_client:482] - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-60d8dd4c-9113-435e-b8c8-ba8d3a9e4091', 'json_data': {'messages': [{'role': 'user', 'content': '\n        You are an expert recruiter. Expand this job search query to include relevant synonyms, alternative terms, and industry-specific keywords for a candidate search.\n        Original Query: "(\'quantitative analyst\' OR \'financial engineer\' OR \'PhD physics\' OR \'PhD mathematics\') AND (\'Goldman Sachs\' OR \'Jane Street\' OR \'Citadel\' OR \'Two Sigma\' OR \'hedge fund\' OR \'investment bank\') AND (python OR c++)"\n        Job Title: Quantitative Finance\n        Focus on terms likely to appear in professional profiles like on LinkedIn.\n        Return only the expanded search query as a single string, with no explanations. Use boolean operators like OR and parentheses for grouping.\n        Example output: ("tax attorney" OR "tax lawyer") AND ("IRS audit" OR "tax controversy")\n        '}], 'model': 'gpt-4.1-nano-2025-04-14', 'max_tokens': 150, 'temperature': 0.2}}
+[2025-08-03 11:13:37,356] [DEBUG] [openai._base_client:975] - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+[2025-08-03 11:13:37,357] [DEBUG] [httpcore.connection:47] - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+[2025-08-03 11:13:37,378] [DEBUG] [httpcore.connection:47] - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10d9d41a0>
+[2025-08-03 11:13:37,378] [DEBUG] [httpcore.connection:47] - start_tls.started ssl_context=<ssl.SSLContext object at 0x109356180> server_hostname='api.openai.com' timeout=5.0
+[2025-08-03 11:13:37,415] [DEBUG] [httpcore.connection:47] - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x10d93d090>
+[2025-08-03 11:13:37,415] [DEBUG] [httpcore.http11:47] - send_request_headers.started request=<Request [b'POST']>
+[2025-08-03 11:13:37,415] [DEBUG] [httpcore.http11:47] - send_request_headers.complete
+[2025-08-03 11:13:37,415] [DEBUG] [httpcore.http11:47] - send_request_body.started request=<Request [b'POST']>
+[2025-08-03 11:13:37,415] [DEBUG] [httpcore.http11:47] - send_request_body.complete
+[2025-08-03 11:13:37,415] [DEBUG] [httpcore.http11:47] - receive_response_headers.started request=<Request [b'POST']>
+[2025-08-03 11:13:40,326] [DEBUG] [httpcore.http11:47] - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 03 Aug 2025 05:43:40 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'mercor'), (b'openai-processing-ms', b'2530'), (b'openai-project', b'proj_sfZh9NACZ4vz1REoTlOjxj1H'), (b'openai-version', b'2020-10-01'), (b'x-envoy-upstream-service-time', b'2556'), (b'x-ratelimit-limit-requests', b'30000'), (b'x-ratelimit-limit-tokens', b'150000000'), (b'x-ratelimit-remaining-requests', b'29999'), (b'x-ratelimit-remaining-tokens', b'149999800'), (b'x-ratelimit-reset-requests', b'2ms'), (b'x-ratelimit-reset-tokens', b'0s'), (b'x-request-id', b'req_f020f956924aa14e6a0326f18321edae'), (b'x-envoy-decorator-operation', b'router.openai.svc.cluster.local:5004/*'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=vuX90nyY0CeN8XYxUaP8pMOEvbilUDMfal6WSKNk100-1754199820-1.0.1.1-u0MBXD0KFROsR1qeI6map9Hs2JJIiXRvm5mJd09OhDHW9VV6xq5LCKowrfxKEmEWpeuMezegi.E1rSoSvPF7k5LtjLDPYR0NMZdYQX7qr60; path=/; expires=Sun, 03-Aug-25 06:13:40 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=e2SoHWxZbQ7XfEdlGeYI0UcObNmw0V.DZXeEFmCGrI4-1754199820293-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'96937f9b19d254f0-DEL'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+[2025-08-03 11:13:40,329] [INFO] [httpx:1025] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-08-03 11:13:40,329] [DEBUG] [httpcore.http11:47] - receive_response_body.started request=<Request [b'POST']>
+[2025-08-03 11:13:40,330] [DEBUG] [httpcore.http11:47] - receive_response_body.complete
+[2025-08-03 11:13:40,330] [DEBUG] [httpcore.http11:47] - response_closed.started
+[2025-08-03 11:13:40,330] [DEBUG] [httpcore.http11:47] - response_closed.complete
+[2025-08-03 11:13:40,330] [DEBUG] [openai._base_client:1013] - HTTP Response: POST https://api.openai.com/v1/chat/completions "200 OK" Headers([('date', 'Sun, 03 Aug 2025 05:43:40 GMT'), ('content-type', 'application/json'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'mercor'), ('openai-processing-ms', '2530'), ('openai-project', 'proj_sfZh9NACZ4vz1REoTlOjxj1H'), ('openai-version', '2020-10-01'), ('x-envoy-upstream-service-time', '2556'), ('x-ratelimit-limit-requests', '30000'), ('x-ratelimit-limit-tokens', '150000000'), ('x-ratelimit-remaining-requests', '29999'), ('x-ratelimit-remaining-tokens', '149999800'), ('x-ratelimit-reset-requests', '2ms'), ('x-ratelimit-reset-tokens', '0s'), ('x-request-id', 'req_f020f956924aa14e6a0326f18321edae'), ('x-envoy-decorator-operation', 'router.openai.svc.cluster.local:5004/*'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=vuX90nyY0CeN8XYxUaP8pMOEvbilUDMfal6WSKNk100-1754199820-1.0.1.1-u0MBXD0KFROsR1qeI6map9Hs2JJIiXRvm5mJd09OhDHW9VV6xq5LCKowrfxKEmEWpeuMezegi.E1rSoSvPF7k5LtjLDPYR0NMZdYQX7qr60; path=/; expires=Sun, 03-Aug-25 06:13:40 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=e2SoHWxZbQ7XfEdlGeYI0UcObNmw0V.DZXeEFmCGrI4-1754199820293-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '96937f9b19d254f0-DEL'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
+[2025-08-03 11:13:40,330] [DEBUG] [openai._base_client:1021] - request_id: req_f020f956924aa14e6a0326f18321edae
+[2025-08-03 11:13:40,344] [INFO] [search_engine:79] - Query expanded: '('quantitative analyst' OR 'financial engineer' OR 'PhD physics' OR 'PhD mathematics') AND ('Goldman Sachs' OR 'Jane Street' OR 'Citadel' OR 'Two Sigma' OR 'hedge fund' OR 'investment bank') AND (python OR c++)' -> '('quantitative analyst' OR 'quant' OR 'quantitative researcher' OR 'financial engineer' OR 'financial modeller' OR 'financial mathematician' OR 'financial scientist' OR 'PhD physics' OR 'PhD physics graduate' OR 'Doctorate in Physics' OR 'PhD mathematics' OR 'Doctorate in Mathematics' OR 'Mathematician' OR 'Mathematics PhD') AND ('Goldman Sachs' OR 'GS' OR 'Jane Street' OR 'Citadel' OR 'Two Sigma' OR 'Hedge Fund' OR 'Hedge Funds' OR 'Investment Bank' OR 'Investment Banking' OR 'Asset Management' OR 'Quant Fund' OR 'Quantitative Trading Firm') AND ('
+[2025-08-03 11:13:40,345] [DEBUG] [voyage:36] - message='Request to Voyage API' method=post path=https://api.voyageai.com/v1/embeddings
+[2025-08-03 11:13:40,345] [DEBUG] [voyage:36] - data='{"input": ["(\'quantitative analyst\' OR \'quant\' OR \'quantitative researcher\' OR \'financial engineer\' OR \'financial modeller\' OR \'financial mathematician\' OR \'financial scientist\' OR \'PhD physics\' OR \'PhD physics graduate\' OR \'Doctorate in Physics\' OR \'PhD mathematics\' OR \'Doctorate in Mathematics\' OR \'Mathematician\' OR \'Mathematics PhD\') AND (\'Goldman Sachs\' OR \'GS\' OR \'Jane Street\' OR \'Citadel\' OR \'Two Sigma\' OR \'Hedge Fund\' OR \'Hedge Funds\' OR \'Investment Bank\' OR \'Investment Banking\' OR \'Asset Management\' OR \'Quant Fund\' OR \'Quantitative Trading Firm\') AND ("], "model": "voyage-3", "input_type": "query", "truncation": null, "encoding_format": "base64"}' message='Post details'
+[2025-08-03 11:13:40,345] [DEBUG] [urllib3.util.retry:286] - Converted retries value: 2 -> Retry(total=2, connect=None, read=None, redirect=None, status=None)
+[2025-08-03 11:13:40,348] [DEBUG] [urllib3.connectionpool:1049] - Starting new HTTPS connection (1): api.voyageai.com:443
+[2025-08-03 11:13:40,741] [DEBUG] [urllib3.connectionpool:544] - https://api.voyageai.com:443 "POST /v1/embeddings HTTP/1.1" 200 5586
+[2025-08-03 11:13:40,742] [DEBUG] [voyage:36] - message='Voyage API response' path=https://api.voyageai.com/v1/embeddings processing_ms=None request_id=None response_code=200
+[2025-08-03 11:13:40,743] [DEBUG] [search_engine:91] - Generated embedding for query using voyage-3.
+[2025-08-03 11:13:40,746] [DEBUG] [urllib3.connectionpool:1049] - Starting new HTTPS connection (1): aws-us-west-2.turbopuffer.com:443
+[2025-08-03 11:13:41,729] [DEBUG] [urllib3.connectionpool:544] - https://aws-us-west-2.turbopuffer.com:443 "POST /v1/vectors/dheeraj_joshi_tpuf_key/query HTTP/1.1" 200 None
+[2025-08-03 11:13:42,319] [INFO] [search_engine:209] - Found 250 initial candidates.
+[2025-08-03 11:13:42,322] [DEBUG] [utils:83] - Explicit Years: 10, Date Range Years: 0
+[2025-08-03 11:13:42,323] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,323] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,323] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,324] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,324] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,325] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,326] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,327] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,327] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,328] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,328] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,329] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,329] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,330] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,330] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,331] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,332] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,333] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,333] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,334] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,335] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,335] [DEBUG] [utils:83] - Explicit Years: 10, Date Range Years: 0
+[2025-08-03 11:13:42,336] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,336] [DEBUG] [utils:83] - Explicit Years: 15, Date Range Years: 0
+[2025-08-03 11:13:42,337] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,337] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,338] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,338] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,338] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,339] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,339] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,340] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,340] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,341] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,341] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,342] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,342] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,343] [DEBUG] [utils:83] - Explicit Years: 12, Date Range Years: 0
+[2025-08-03 11:13:42,344] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,344] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,345] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,346] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,346] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,346] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,347] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,348] [DEBUG] [utils:83] - Explicit Years: 5, Date Range Years: 2
+[2025-08-03 11:13:42,350] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,350] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,350] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,351] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,352] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,352] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,352] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,354] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,355] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,355] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,356] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,356] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,356] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,356] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,357] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,357] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,357] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,358] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,358] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,359] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,359] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,359] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,360] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,360] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,361] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,361] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,362] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,362] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,362] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,363] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,363] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,363] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,364] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,364] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,364] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,365] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,365] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,365] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,365] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,366] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,366] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,367] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,368] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,369] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 2
+[2025-08-03 11:13:42,369] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,369] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,370] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,370] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,370] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,371] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,371] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,371] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,372] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,372] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,372] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,373] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,373] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,374] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,374] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,375] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 11
+[2025-08-03 11:13:42,376] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,376] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,376] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,377] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,378] [DEBUG] [utils:83] - Explicit Years: 15, Date Range Years: 0
+[2025-08-03 11:13:42,378] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,378] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,379] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,379] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,379] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,379] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,380] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 8
+[2025-08-03 11:13:42,380] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,380] [DEBUG] [utils:83] - Explicit Years: 16, Date Range Years: 4
+[2025-08-03 11:13:42,380] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,381] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,381] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,382] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,383] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,383] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,383] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,384] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 8
+[2025-08-03 11:13:42,384] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,384] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,384] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,385] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,385] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,385] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,386] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,386] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 10
+[2025-08-03 11:13:42,386] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,386] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,387] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,387] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,388] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,388] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,388] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,389] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,389] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,389] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,389] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,389] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,389] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,390] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,390] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,390] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,390] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,391] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,391] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,391] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,392] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,392] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,392] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,392] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,392] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,393] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,393] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,393] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,394] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,394] [DEBUG] [utils:83] - Explicit Years: 10, Date Range Years: 0
+[2025-08-03 11:13:42,394] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,394] [DEBUG] [utils:83] - Explicit Years: 20, Date Range Years: 0
+[2025-08-03 11:13:42,395] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,396] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,396] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,397] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,397] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,397] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,398] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,399] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,399] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,399] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,400] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,400] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,400] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,400] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,401] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,402] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,403] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,403] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,404] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,404] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,405] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,405] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,406] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,406] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,406] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,407] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,407] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,408] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,408] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,408] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,409] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,409] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,410] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,410] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,410] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,411] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,411] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,411] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,411] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,412] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,413] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,413] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,414] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,414] [DEBUG] [utils:83] - Explicit Years: 10, Date Range Years: 0
+[2025-08-03 11:13:42,414] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,414] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,415] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,415] [DEBUG] [utils:83] - Explicit Years: 15, Date Range Years: 0
+[2025-08-03 11:13:42,415] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,415] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,415] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,416] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,416] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,416] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,416] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,417] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,417] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,418] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,418] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,418] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,419] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,420] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,420] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,420] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,421] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,421] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,421] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,421] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,422] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,422] [DEBUG] [utils:83] - Explicit Years: 12, Date Range Years: 0
+[2025-08-03 11:13:42,422] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,422] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,422] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,423] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,423] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,423] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,424] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,424] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,425] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,425] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,425] [DEBUG] [utils:83] - Explicit Years: 0, Date Range Years: 0
+[2025-08-03 11:13:42,426] [INFO] [search_engine:212] - Enriched all candidates with structured data.
+[2025-08-03 11:13:42,426] [INFO] [search_engine:133] - Applying hard filters to 250 candidates
+[2025-08-03 11:13:42,426] [INFO] [search_engine:180] - Hard filters: 250 -> 17 candidates passed
+[2025-08-03 11:13:42,426] [INFO] [search_engine:221] - 17 candidates remain after hard filters.
+[2025-08-03 11:13:42,428] [INFO] [search_engine:227] - Calculated final scores for all candidates.
+[2025-08-03 11:13:42,428] [INFO] [search_engine:236] - Returning top 10 candidate IDs.
+[2025-08-03 11:13:42,428] [DEBUG] [search_engine:237] - Top 3 candidates with scores:
+[2025-08-03 11:13:42,428] [DEBUG] [search_engine:239] - ID: 6795c42e52a365d1168396c1, Name: Daniel Klein, Score: 1.000
+[2025-08-03 11:13:42,428] [DEBUG] [search_engine:239] - ID: 67949df6a1a09a48fea6c8e2, Name: Meredith Goldsmith, Score: 0.998
+[2025-08-03 11:13:42,428] [DEBUG] [search_engine:239] - ID: 6795bde23e76d5b5872b1889, Name: Jessica Mitra, Score: 0.864
+[2025-08-03 11:13:42,428] [INFO] [utils:35] - Testing quantitative_finance.yml with 10 candidates...
+[2025-08-03 11:13:42,429] [DEBUG] [urllib3.connectionpool:1049] - Starting new HTTPS connection (1): mercor-dev--search-eng-interview.modal.run:443
+[2025-08-03 11:13:47,207] [DEBUG] [urllib3.connectionpool:544] - https://mercor-dev--search-eng-interview.modal.run:443 "POST /evaluate HTTP/1.1" 200 None
+[2025-08-03 11:13:47,216] [INFO] [utils:41] - quantitative_finance.yml: Average score = 8.333333333333334
+[2025-08-03 11:13:47,217] [INFO] [utils:44] -   Soft scores:
+[2025-08-03 11:13:47,217] [INFO] [utils:48] -     high_stakes_environment: 5.9
+[2025-08-03 11:13:47,217] [INFO] [utils:48] -     python_quantitative_proficiency: 8.35
+[2025-08-03 11:13:47,217] [INFO] [utils:48] -     financial_modeling_experience: 8.1
+[2025-08-03 11:13:47,217] [INFO] [utils:51] -   Hard scores:
+[2025-08-03 11:13:47,217] [INFO] [utils:55] -     three_plus_years_quant_finance: 0.8 pass rate
+[2025-08-03 11:13:47,217] [INFO] [utils:55] -     m7_mba: 0.1 pass rate
+[2025-08-03 11:13:48,227] [INFO] [utils:129] - Test results saved to test_results.json

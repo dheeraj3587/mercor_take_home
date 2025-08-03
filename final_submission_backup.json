@@ -1,0 +1,149 @@
+{
+  "submitter_info": {
+    "name": "Dheeraj Joshi",
+    "email": "anikatyonzon111@gmail.com",
+    "namespace": "dheeraj_joshi_tpuf_key",
+    "submission_time": 1754199341.610548
+  },
+  "submission_data": {
+    "config_candidates": {
+      "tax_lawyer.yml": [
+        "67958c43a1a09a48feafeeb0",
+        "6795916d8d90554e606c69b9",
+        "6795b34c3eff0c142a80c821",
+        "679546eaf9f986ea7fb89346",
+        "67954f630db3e792567739fd",
+        "679621648a14699f160c6f15",
+        "6794a7f973bf14921fa671e9",
+        "67966dc80db3e792568221e4",
+        "6795332c8a14699f1604472a",
+        "6795a1f70db3e792567a6226"
+      ],
+      "mechanical_engineers.yml": [
+        "67958db8f9f986ea7fbb2eb3",
+        "67952f4d3e76d5b58726156f",
+        "679667b37e0084c5fa7de1e6",
+        "67957cbc0db3e7925678e2d6",
+        "6796332a3eff0c142a85a574",
+        "6796c3c6f9f986ea7fc625ff",
+        "6795bbaf8a14699f1609213b",
+        "679521110db3e79256759cc8",
+        "679590987e0084c5fa767706",
+        "679643907e0084c5fa7ca786"
+      ],
+      "junior_corporate_lawyer.yml": [
+        "6795ae61f9f986ea7fbc4d7c",
+        "679595163eff0c142a7faa3d",
+        "6796d41d8a14699f1612d1ac",
+        "67952e0652a365d1167dcada",
+        "679730c03eff0c142a8e4ba5",
+        "6795f7d28d90554e60701507",
+        "679667b4f9f986ea7fc2faf7",
+        "6795c37e52a365d116838ec7",
+        "6796487ff9f986ea7fc1d809",
+        "6794f85952a365d1167bf196"
+      ],
+      "doctors_md.yml": [
+        "6796706373bf14921fb80ad0",
+        "679597ad8d90554e606ca53b",
+        "6796ed5d0db3e7925686c423",
+        "6794d265a1a09a48fea8bccb",
+        "6794c9838d90554e6064e9c6",
+        "67955cb48a14699f1605b6a3",
+        "679682db73bf14921fb8bea7",
+        "67963afd3eff0c142a85e8ee",
+        "67971e9c3e76d5b587377ccc",
+        "6796e84c3eff0c142a8c1314"
+      ],
+      "biology_expert.yml": [
+        "679699ea52a365d1168b2366",
+        "6795ef98a1a09a48feb39133",
+        "67957fb2a1a09a48feaf6f63",
+        "6796034f0db3e792567df836",
+        "6794e362a1a09a48fea961d5",
+        "6796cfb70db3e7925685a50c",
+        "6795b0b852a365d11682c54f",
+        "6795fda28a14699f160b57ed",
+        "67970fb93eff0c142a8d30d9",
+        "6796c1c352a365d1168c8c73"
+      ],
+      "mathematics_phd.yml": [
+        "6796a3a00db3e7925683c42f",
+        "6795d39ef9f986ea7fbdbbde",
+        "67966daa52a365d116893ab0",
+        "679511e6f9f986ea7fb69ec3",
+        "679581fa73bf14921faf5001",
+        "67958fe03e76d5b587295b3d",
+        "6795de220db3e792567ca60b",
+        "6794d5eb73bf14921fa836c4",
+        "6796ddf20db3e79256863f91",
+        "6794ad7b8d90554e6063dee3"
+      ],
+      "anthropology.yml": [
+        "679547e3f9f986ea7fb89bc9",
+        "67954c078d90554e6069d444",
+        "6794f67c3e76d5b587242d1a",
+        "679697d70db3e79256834437",
+        "6795b2890db3e792567afd63",
+        "67956d51a1a09a48feaea79f",
+        "679560d1f9f986ea7fb97563",
+        "6795433f73bf14921fac4b17",
+        "67966a3e7e0084c5fa7df912",
+        "6795e9cea1a09a48feb35131"
+      ],
+      "quantitative_finance.yml": [
+        "6795c42e52a365d1168396c1",
+        "6794afd48a14699f16ffc889",
+        "6795f44ba1a09a48feb3c2a0",
+        "6794ca097e0084c5fa6f0c54",
+        "67958b1052a365d116815757",
+        "6794cc9b7e0084c5fa6f2096",
+        "67951f2d3e76d5b58725999a",
+        "67949d780db3e7925670c82a",
+        "67948c45a1a09a48fea615ab",
+        "6794988c0db3e792567092f6"
+      ],
+      "radiology.yml": [
+        "679557883e76d5b587273c09",
+        "6795103fa1a09a48feab2a73",
+        "6796ef1e3eff0c142a8c3ec7",
+        "6794fd9f8a14699f16027984",
+        "679563b70db3e79256780641",
+        "67962a54a1a09a48feb5b488",
+        "679698f03eff0c142a893a51",
+        "6794bd1e0db3e792567212f0",
+        "6796ec2373bf14921fbc8a18",
+        "6796f626f9f986ea7fc7f6c6"
+      ],
+      "bankers.yml": [
+        "6794c62ef9f986ea7fb41f57",
+        "679696143e76d5b58732c393",
+        "67968d4c3e76d5b587326d6a",
+        "679518af0db3e79256754512",
+        "67971a7df9f986ea7fc94c9e",
+        "679597078a14699f1607c91e",
+        "6794b5373eff0c142a78fd2b",
+        "6795f5078d90554e606ff7d2",
+        "679660cb8a14699f160e9b35",
+        "6796dd543eff0c142a8bc1bf"
+      ]
+    }
+  },
+  "metadata": {
+    "total_query_types": 10,
+    "expected_candidates_per_query": 10,
+    "actual_candidates_per_query": {
+      "tax_lawyer.yml": 10,
+      "mechanical_engineers.yml": 10,
+      "junior_corporate_lawyer.yml": 10,
+      "doctors_md.yml": 10,
+      "biology_expert.yml": 10,
+      "mathematics_phd.yml": 10,
+      "anthropology.yml": 10,
+      "quantitative_finance.yml": 10,
+      "radiology.yml": 10,
+      "bankers.yml": 10
+    },
+    "total_candidates_submitted": 100
+  }
+}
